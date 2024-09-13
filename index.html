@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parque Centenario</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
@@ -15,20 +16,29 @@
     <header>
         <div class="nv-bg">
             <nav class="navegacion-principal contenedor">
-                <a class="hrv-grow-shadow" href="">QUIENES SOMOS</a>
-                <a href="">HORARIOS Y TARIFAS</a>
-                <a href="">REGLAMENTOS</a>
-                <a href="">TERCERA ETAPA</a>
+                <img src="img/parque.png">
+                <a class="grow" href="#">QUIENES SOMOS</a>
+                <a class="grow" href="#">HORARIOS Y TARIFAS</a>
+                <a class="grow" href="#">REGLAMENTOS</a>
+                <a class="grow" href="#">TERCERA ETAPA</a>
             </nav>
         </div>
     </header>
     <section>
-        <div class="slider">
-            <div class="slider--inner">
-                <img src="img/evelynn.jpg">
-                <img src="img/evelynn-2.jpg">
-                <img src="img/ahri.jpg">
+        <div class="row">
+            <button class="siguiente grow">
+                <i class="fi fi-rr-angle-left"></i>
+            </button>
+            <div class="slider">
+                <div class="slider--inner">
+                    <img src="img/evelynn.jpg">
+                    <img src="img/evelynn-2.jpg">
+                    <img src="img/ahri.jpg">
+                </div>
             </div>
+            <button class="siguiente grow">
+                <i class="fi fi-rr-angle-right"></i>
+            </button>
         </div>
     </section>
     <footer></footer>

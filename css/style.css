@@ -52,31 +52,45 @@ a {
     background-color: var(--primarioLight);
 }
 .contenedor {
-    width: 120rem;
+    width: 140rem;
     margin: 0 auto;
 }
 .navegacion-principal {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .navegacion-principal a {
     border-radius: 1rem;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
+    padding: 0.5rem;
     color: #000;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
-    
+    border-radius: 1rem;
+    box-shadow:  14px 14px 28px #9b9b9b,
+             -14px -14px 28px #ffffff;
+}
+.navegacion-principal img {
+    width: 30rem; /* Tamaño fijo para la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 2rem; /* Espacio entre la imagen y los enlaces */
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 140rem; /* Establece un ancho máximo */
+    margin: 0 auto; /* Centra la fila en la página */
 }
 
 .slider {
     overflow: hidden;
     position: relative;
     width: 140rem;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
-
 .slider--inner {
     display: flex;
     flex-direction: row;
@@ -86,7 +100,7 @@ a {
 
 .slider--inner img {
     height: 70rem;
-    width: 140rem;
+    width: 100%;
     flex-shrink: 0; /* Evita que la imagen se reduzca */
     margin: 0 auto;
     object-fit: cover; /* Ajusta la imagen dentro del contenedor */
@@ -102,3 +116,37 @@ a {
     opacity: 0;
 }
 
+.siguiente {
+    width: 4.5rem;
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--secundario);
+    color: var(--segundarioLight);
+    border-radius: 5rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), /* Sombras más pequeñas pero visibles */
+                -4px -4px 8px rgba(255, 255, 255, 0.3); /* Efecto de iluminación */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves */
+}
+.siguiente:first-of-type {
+    margin-right: 1rem; /* Espacio entre el botón y el slider */
+}
+
+.siguiente:last-of-type {
+    margin-left: 1rem; /* Espacio entre el slider y el botón derecho */
+}
+.siguiente i {
+    font-size: 1.4rem; /* Ajusta el tamaño del icono si es necesario */
+}             
+.grow{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.grow:hover{
+    transform: scale3d(1.2, 1.2, 0.3);
+        -webkit-transform: scale3d(1.2, 1.2, 0.3);
+        -moz-transform: scale3d(1.2, 1.2, 0.3);
+}
